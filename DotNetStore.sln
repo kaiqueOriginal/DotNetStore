@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-API", "4-API", "{F7B6822E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Apresentação", "5-Apresentação", "{C734E2CA-9D1A-40ED-A4ED-76174453F546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleEntrada", "ConsoleEntrada\ConsoleEntrada.csproj", "{2297A8C6-3046-43A8-9279-E3847C3EEF3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleEntrada", "ConsoleEntrada\ConsoleEntrada.csproj", "{2297A8C6-3046-43A8-9279-E3847C3EEF3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainProject", "DomainProject\DomainProject.csproj", "{5E28AF56-40FF-40AE-AFBA-8DEC779160E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,12 +29,17 @@ Global
 		{2297A8C6-3046-43A8-9279-E3847C3EEF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2297A8C6-3046-43A8-9279-E3847C3EEF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2297A8C6-3046-43A8-9279-E3847C3EEF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E28AF56-40FF-40AE-AFBA-8DEC779160E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E28AF56-40FF-40AE-AFBA-8DEC779160E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E28AF56-40FF-40AE-AFBA-8DEC779160E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E28AF56-40FF-40AE-AFBA-8DEC779160E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2297A8C6-3046-43A8-9279-E3847C3EEF3B} = {C734E2CA-9D1A-40ED-A4ED-76174453F546}
+		{5E28AF56-40FF-40AE-AFBA-8DEC779160E2} = {E427B4C7-AC13-4C2B-A20E-C1D7595C60AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1AE67A-2CAE-4C95-A3B8-6AAA608BD640}

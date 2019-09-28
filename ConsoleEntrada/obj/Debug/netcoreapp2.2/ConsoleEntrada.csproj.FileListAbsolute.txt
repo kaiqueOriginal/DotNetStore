@@ -1,0 +1,11 @@
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\bin\Debug\netcoreapp2.2\ConsoleEntrada.deps.json
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\bin\Debug\netcoreapp2.2\ConsoleEntrada.runtimeconfig.json
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\bin\Debug\netcoreapp2.2\ConsoleEntrada.runtimeconfig.dev.json
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\bin\Debug\netcoreapp2.2\ConsoleEntrada.dll
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\bin\Debug\netcoreapp2.2\ConsoleEntrada.pdb
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.csprojAssemblyReference.cache
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.csproj.CoreCompileInputs.cache
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.AssemblyInfoInputs.cache
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.AssemblyInfo.cs
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.dll
+C:\Users\ksakX\ProjectsGit\DotNetStore\ConsoleEntrada\obj\Debug\netcoreapp2.2\ConsoleEntrada.pdb
