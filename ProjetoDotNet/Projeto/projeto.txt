@@ -1,0 +1,119 @@
+Sistema Para loja de Animais e esportes radicais com E-Comerce
+
+Back:
+	Banco de dados relacional
+		Cadastro de funcionarios(integração com sistema de RH)
+		Estabelecimentos
+		Fornecedores
+		
+	Banco de dados Relacional 2
+		Produtos
+		Estoque
+		Clientes
+		
+	Banco de dados não relacional
+		Historico de vendas
+			Historico de vendas de todos os meses anteriores
+			Normativos
+		Arquivos(
+			notas fiscais
+			Pedidos
+		)
+
+	Financeiro
+		Saldo(saldo em caixa,
+			recebiveis, 
+			debitos futuros, 
+			transações, 
+			credito disponivel por banco)
+		Capital de giro disponivel(
+			quanto ainda disponivel,
+			media de gasto por mes)
+		Demonstrativo financeiro 
+			Previsão de gastos por area
+			Previsão de retorno
+			Previsão de gastos com base no historico
+		Sistema de emissão de notas fiscais
+
+	Sistema de ponto
+		historico de pontos
+		
+	Sistema gerador de relatorios
+		financeiro
+		Pontos
+		Horas extra
+		vendas
+		perca de estoque
+		
+	Sistema de RH
+		????
+	
+	Sistema de sincronização automatico de banco de dados
+		
+	Asp.Net MVC para consulta interna
+	Xamarim para consulta adm
+	Xamarin funcionarios
+	xamarin para clientes
+	API Asp.Net
+	
+
+Dotnet Core 2.2
+
+Tecnologias:
+	DotNetCore 2.2
+	Asp.Net Mvc
+	
+	Banco de dados interno SQL server
+	Banco de dados da loja MySql
+	xamarin para aplicativos(Funcionarios, loja, administrativo)
+	sistema intranet com asp.net MVC
+	ASP.net para api
+	
+	
+	
+Bonus:
+	Integração com receita
+	API com spring boot
+	Front end
+	
+	
+	
+Lado externo:
+	Banco de dados MySql{
+		SubProdutos
+			É um Produto
+			tem Categorias
+			Estoque
+			Local do estoque
+			Fornecedor
+			Preço
+			Tipo(Cor,Modelo)
+			Fotos
+			Descrição
+			Informações adicionais
+	}
+	API{
+		Entrega(API de frete ou terceiros)
+		GetProdutos()
+		SetPedido() (DB Não relacional JSON)		
+	}
+	
+Front End{
+	Carrinho
+}
+
+-Mandar email ou sms confirmando compra
+-Salvar pedidos JSON em banco de dados não relacional tambem na nuvem
+-Apartir do MVP2 tudo em docker
+-Implementar sistema de historico de compras por cliente com busca no db não relacional
+-Implementar sistema de cancelamento de pedido e devolução do dinheiro até data limite(E informar ao sisFin)
+-Refatorar banco de dados para ocupar menos espaço	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,56 @@
+Natual extremer life
+Pesca
+{
+	Iscas artificiais
+	Iscas soft
+	Massas de pesca
+	Iscas artificiais diferentes
+
+	Roupas
+	Coletes
+	Acessorios
+	
+	Fly
+	Carretilha
+	Molinete
+
+	Vara telescopica
+	Vara de carretilha
+	Vara de molinete
+	Vara de fly
+}
+Aquario
+{
+	Aquarios
+	
+	Ração
+	
+	Pedras
+	
+	Bombas
+	Termostatus
+	
+	filtragem
+}
+Animais
+{
+	Ração
+	Gaiolas
+	Viveiros
+	Higiene
+	Remedios
+	Brinquedos
+	Roupas
+}
+Camping
+{
+	Barracas
+	Lanternas
+	Sacos de dormir
+}
+Esportes radicais
+{
+	Caiaques
+	Pranchas de surf
+	Roupas
+}

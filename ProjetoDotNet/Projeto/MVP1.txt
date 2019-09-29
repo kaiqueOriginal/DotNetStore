@@ -1,0 +1,13 @@
+Sprint_1:"O banco de dados"
+1/2		classes modelo
+3/2		TemplateMVC Basico{tres telas:Produtos, inicial e detalhes do produto simples}
+1/2		Controlers{Produtos(Actions:Categorias-ficam em menu),Carrinho}
+1		Services{Cadastra cliente,MassiveSelectProduct,MassiveSelectProductByCategory,SimgleSelectProduct}
+1/2		Sistema de cadastro
+
+Sprint_2:"A compra"
+1		Calculo de frete
+3		Sistema de pagamento
+
+Sprint_3:"O pedido"
+5		Sistema de carrinho{Json-carrega os pedidos e salva em uma pasta do servidor}

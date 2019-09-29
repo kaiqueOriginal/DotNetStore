@@ -1,0 +1,127 @@
+Produtos:	Categorias{Pesca,Aquario,Animais,Camping,Esportes}
+	Iscas
+	{
+		Material(string)	NotNull
+		Validade(Date)
+		Fabricante(string)	NotNull
+		Aroma(string)
+		Peso(float)			NotNull
+		Quantidade(int)		NotNull
+	}
+	Roupas
+	{
+		Tamanho(Char)		NotNull
+		Material(string)	NotNull
+		ProteçãoUV(int)		NotNull
+		Peso(float)
+		AprovaDagua(Boolean)Default(False)
+		Especie(Defaul seres humanos)
+	}
+	Viveiros
+	{
+		Suportes(int)	Default(0)
+		Litragem(int)
+		Peso(float)
+		Medidas(string)
+		Material(string)
+	}
+	Rações
+	{
+		Animais(string)
+		Quantidade(int)
+		Peso(float)
+		Tipo(string)
+		Sabor/Aroma	(string)
+	}
+	Decoração/Brinquedos
+	{
+		Cor(Enum{Parametrizavel})
+		Peso(float)
+		Quantidade(int)
+		Material(string)
+	}
+	EquipamentosEletricos
+	{
+		AC/DC(Enum{AC/DC})
+		Voltagem(Enum{127V/220V})
+		Potencia(string){W}
+		Peso(float)
+	}
+	Manutenção
+	{
+		Animal(string)
+		Peso(float)
+		Quantidade(int)
+		Validade(Date)
+	}
+	Higiene
+	{
+		Animal(string)
+		Ambiente(string)
+		Condição(Enum{limpesa,Parasitas,Pulgas/Carrapatos,Fungos})
+		Toxico(Boolean)
+		Quantidade(int)
+		Peso/Litragem(float)
+		Estado(Enum{Solido,Liquido,Gasoso})
+		Fabricante(string)
+		Material(string)
+	}
+	Equipamentos
+	{
+		CarretelCapacidade(int)
+		Fabricante(string)
+		Material(string)
+		Rolamentos(int)
+		Freio(string)
+		Manivela(Enum{Direita/Esquerda})
+	}
+	Varas
+	{
+		Fabricante(string)
+		Tipo(string)
+		Tamanho(Enum{P,M,G,GG,EX})
+		Peso(float)
+		Libragem(int)
+		Ação(Enum{Rapída,media,lenta,null}
+		Passadores(int)
+		Interissa(Boolean)
+	}
+	Remedios
+	{
+		PrecisaReceita(Boolean)
+		quantidade(float)
+		Animal(string)
+		Tipo(string)
+	}
+	Barcos
+	{
+		Tipo(Enum{Parametrizavel})
+		Fabricante(string)
+		Agua(Enum{doce/Salgada})
+		Peso(float)
+		Passageiros(int)
+		Medidas(string)
+	}
+	SacoDeDormir
+	{
+		Tamanho(string)
+		Material(string)
+		Peso(float)
+	}
+Tabelas suporte:
+	Cor
+	{
+		nome(string)
+		foto(string)
+		RGB(string)
+	}
+	Barcos
+	{
+		nome(string)
+	}
+
+OBS:
+	1-Para iscas fazer classe abstrata para cada tipo e herdar
+	2-Criar sistema de estoque
+	3-Preço,Fotos,Descrição,Categoria,Inseriu,Ultimo Alterador,Data da inserção, data da alteração
+	4-Criar sistema de conjuntos

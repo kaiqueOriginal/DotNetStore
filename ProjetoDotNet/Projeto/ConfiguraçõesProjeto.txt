@@ -1,0 +1,5 @@
+Repositorio no git front:"DotNetStore"-github
+Repositorio no git Back:
+Docker:
+Trello:BeraguasStudios
+Continuous integration:

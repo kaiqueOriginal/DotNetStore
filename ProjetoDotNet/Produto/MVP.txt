@@ -1,0 +1,15 @@
+MVP1:"A loja"
+"Site funcionando no ar"
+	Monolitico ASP.NET MVC fronte temporario
+	Banco de dados mysql pronto com code frist
+	Deploy manual na nuvem
+	
+Condição de ok: site funcionando na nuvem com carrinho selecionando item e com confirmação de compra
+
+MVP2:"A Loja interna"
+"Sistema de interno administrativo basico e intranet basica"
+	Sistema Monolitico simples para intranet
+	Banco de dados interno basico
+	Sistema de ponto dos funcionarios
+	Sismema de relatorio financeiro basico
+	Loja alimenta banco de dados internos
