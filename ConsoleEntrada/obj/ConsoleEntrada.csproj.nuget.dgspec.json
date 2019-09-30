@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj": {}
+    "C:\\Users\\ksakX\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj": {
+    "C:\\Users\\ksakX\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj",
+        "projectUniqueName": "C:\\Users\\ksakX\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj",
         "projectName": "ConsoleEntrada",
-        "projectPath": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj",
+        "projectPath": "C:\\Users\\ksakX\\DotNetStore\\ConsoleEntrada\\ConsoleEntrada.csproj",
         "packagesPath": "C:\\Users\\ksakX\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\ConsoleEntrada\\obj\\",
+        "outputPath": "C:\\Users\\ksakX\\DotNetStore\\ConsoleEntrada\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

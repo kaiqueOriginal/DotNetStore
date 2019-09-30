@@ -12,7 +12,6 @@ namespace DomainProject.Entities
         public double Preco { get; set; }
         public string Fotos { get; set; }
         public string Descricao { get; set; }
-        public Funcionario UltimoAlterador { get; set; }
         public DateTime StampDateTime { get; set; }
         public DateTime Insercao { get; set; }
 

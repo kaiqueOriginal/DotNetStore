@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\DomainProject\\DomainProject.csproj",
+      "projectUniqueName": "C:\\Users\\ksakX\\DotNetStore\\DomainProject\\DomainProject.csproj",
       "projectName": "DomainProject",
-      "projectPath": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\DomainProject\\DomainProject.csproj",
+      "projectPath": "C:\\Users\\ksakX\\DotNetStore\\DomainProject\\DomainProject.csproj",
       "packagesPath": "C:\\Users\\ksakX\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ksakX\\ProjectsGit\\DotNetStore\\DomainProject\\obj\\",
+      "outputPath": "C:\\Users\\ksakX\\DotNetStore\\DomainProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

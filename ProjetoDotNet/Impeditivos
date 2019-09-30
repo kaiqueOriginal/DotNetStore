@@ -1,0 +1,15 @@
+Problemas:
+	Não sei inserir listas nos modelos do banco de dados
+		Por enquanto vai seguir sem implementação
+		
+MVP2
+Produtos:
+	Barcos
+	{
+		Tipo(Enum{Parametrizavel})
+		Fabricante(string)
+		Agua(Enum{doce/Salgada})
+		Peso(float)
+		Passageiros(int)
+		Medidas(string)
+	}

@@ -54,7 +54,7 @@ Produtos:	Categorias{Pesca,Aquario,Animais,Camping,Esportes}
 		Quantidade(int)
 		Validade(Date)
 	}
-	Higiene
+	ProdutosHigiene
 	{
 		Animal(string)
 		Ambiente(string)
@@ -62,11 +62,10 @@ Produtos:	Categorias{Pesca,Aquario,Animais,Camping,Esportes}
 		Toxico(Boolean)
 		Quantidade(int)
 		Peso/Litragem(float)
-		Estado(Enum{Solido,Liquido,Gasoso})
 		Fabricante(string)
 		Material(string)
 	}
-	Equipamentos
+	EquipamentosPesca
 	{
 		CarretelCapacidade(int)
 		Fabricante(string)
@@ -79,7 +78,7 @@ Produtos:	Categorias{Pesca,Aquario,Animais,Camping,Esportes}
 	{
 		Fabricante(string)
 		Tipo(string)
-		Tamanho(Enum{P,M,G,GG,EX})
+		Tamanho(Float)
 		Peso(float)
 		Libragem(int)
 		Ação(Enum{Rapída,media,lenta,null}
@@ -93,35 +92,46 @@ Produtos:	Categorias{Pesca,Aquario,Animais,Camping,Esportes}
 		Animal(string)
 		Tipo(string)
 	}
-	Barcos
-	{
-		Tipo(Enum{Parametrizavel})
-		Fabricante(string)
-		Agua(Enum{doce/Salgada})
-		Peso(float)
-		Passageiros(int)
-		Medidas(string)
-	}
-	SacoDeDormir
-	{
+
+	Camping
+	{(ex saco de dormir e barraca)
 		Tamanho(string)
 		Material(string)
 		Peso(float)
 	}
+	
+	Estoque
+	{
+		Produto(Produto)
+		Quantidade(int)
+		Local(Local)
+		Chegada(Date)
+		Validade(Date)
+	}
+	
 Tabelas suporte:
-	Cor
+	Local
 	{
-		nome(string)
-		foto(string)
-		RGB(string)
+		Rua(string)
+		Bairro(string)
+		Cidade(string)
+		Pais(string)
+		Numero(int)
 	}
-	Barcos
+	Animais
 	{
-		nome(string)
+		Id(int)
+		Nome(string)
+		Especie(string)
 	}
+	
 
 OBS:
-	1-Para iscas fazer classe abstrata para cada tipo e herdar
+
 	2-Criar sistema de estoque
 	3-Preço,Fotos,Descrição,Categoria,Inseriu,Ultimo Alterador,Data da inserção, data da alteração
 	4-Criar sistema de conjuntos
+	
+	
+	
+	
