@@ -1,0 +1,10 @@
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\bin\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.deps.json
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\bin\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.dll
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\bin\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.pdb
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\obj\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.csprojAssemblyReference.cache
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\obj\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\obj\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.AssemblyInfo.cs
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\obj\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.dll
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\obj\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.pdb
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\bin\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.runtimeconfig.json
+C:\Users\ksakX\DotNetStore\DotnetSotre.Infra.Data\bin\Debug\netcoreapp3.0\DotnetSotre.Infra.Data.runtimeconfig.dev.json

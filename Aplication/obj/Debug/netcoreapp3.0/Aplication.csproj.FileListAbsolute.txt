@@ -1,0 +1,8 @@
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.csprojAssemblyReference.cache
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.AssemblyInfoInputs.cache
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.AssemblyInfo.cs
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.TagHelpers.input.cache
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.TagHelpers.output.cache
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.dll
+C:\Users\ksakX\DotNetStore\Aplication\obj\Debug\netcoreapp3.0\Aplication.pdb

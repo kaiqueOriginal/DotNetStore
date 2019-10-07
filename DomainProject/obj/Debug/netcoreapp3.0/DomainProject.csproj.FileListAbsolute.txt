@@ -1,0 +1,7 @@
+C:\Users\ksakX\DotNetStore\DomainProject\bin\Debug\netcoreapp3.0\DomainProject.deps.json
+C:\Users\ksakX\DotNetStore\DomainProject\bin\Debug\netcoreapp3.0\DomainProject.dll
+C:\Users\ksakX\DotNetStore\DomainProject\bin\Debug\netcoreapp3.0\DomainProject.pdb
+C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.AssemblyInfoInputs.cache
+C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.AssemblyInfo.cs
+C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.dll
+C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.pdb
