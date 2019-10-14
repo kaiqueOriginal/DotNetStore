@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class Local
+    public class Local
     {
         public int Id { get; set; }
         public string Rua { get; set; }

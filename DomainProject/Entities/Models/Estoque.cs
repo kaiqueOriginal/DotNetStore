@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class Estoque
+    public class Estoque
     {
         public int Id { get; set; }
 

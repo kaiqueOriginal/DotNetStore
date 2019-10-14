@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class Camping : Produto
+    public class Camping : Produto
     {
         public string Tamanho { get; set; }
         public string Material { get; set; }

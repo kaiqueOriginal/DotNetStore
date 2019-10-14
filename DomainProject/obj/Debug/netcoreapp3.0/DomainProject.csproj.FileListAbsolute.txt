@@ -5,3 +5,4 @@ C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.A
 C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.AssemblyInfo.cs
 C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.dll
 C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.pdb
+C:\Users\ksakX\DotNetStore\DomainProject\obj\Debug\netcoreapp3.0\DomainProject.csprojAssemblyReference.cache

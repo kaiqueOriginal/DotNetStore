@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class EquipamentosEletricos : Produto
+    public class EquipamentosEletricos : Produto
     {
         public Corrente TipoCorrente { get; set; }
         public tensao Tensao { get; set; }

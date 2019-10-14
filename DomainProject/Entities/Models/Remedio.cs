@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class Remedio : Produto
+    public class Remedio : Produto
     {
         public bool PrecisaReceita { get; set; }
         public Animal Animal { get; set; }

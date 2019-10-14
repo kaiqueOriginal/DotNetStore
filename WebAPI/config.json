@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    //localHost
+    "NatureLife": "Server = localhost;userid = root;password = senha;database=NatureLife"
+  }
+}

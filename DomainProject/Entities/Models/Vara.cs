@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DomainProject.Entities.Models
 {
-    class Vara : Produto
+    public class Vara : Produto
     {
         public string Fabricante { get; set; }
         public TipoVara Tipo { get; set; }
