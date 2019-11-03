@@ -12,6 +12,7 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<ProdutoHigiene> builder)
         {
             builder.HasKey(p => p.Id);
+            builder.HasOne(p => p.Animal);
         }
     }
 }

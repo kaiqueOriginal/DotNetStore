@@ -6,7 +6,8 @@ namespace DomainProject.Entities.Models
 {
     public class Racao : Produto
     {
-        public Animal Animal { get; set; }
+        public int AnimalId { get; set; }
+        public virtual Animal Animal { get; set; }
         public int Quantidade { get; set; }
         public float Peso { get; set; }
         public string Tipo { get; set; }

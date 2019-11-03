@@ -12,6 +12,7 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<Viveiro> builder)
         {
             builder.HasKey(v => v.Id);
+            builder.HasOne(v => v.Animal);
         }
     }
 }

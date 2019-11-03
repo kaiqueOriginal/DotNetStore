@@ -17,6 +17,40 @@ namespace DotnetSotre.Infra.Data.Migrations
                 .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("DomainProject.Entities.Isca", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Aroma");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fabricante");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<string>("Material");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<DateTime>("Validade");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Iscas");
+
+                    b.HasDiscriminator().HasValue("Isca");
+                });
+
             modelBuilder.Entity("DomainProject.Entities.Models.Animal", b =>
                 {
                     b.Property<int>("Id")
@@ -24,8 +58,7 @@ namespace DotnetSotre.Infra.Data.Migrations
 
                     b.Property<string>("Especie")
                         .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue("100");
+                        .HasMaxLength(100);
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -34,6 +67,348 @@ namespace DotnetSotre.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Animais");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Camping", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<string>("Material");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<string>("Tamanho");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Camping");
+
+                    b.HasDiscriminator().HasValue("Camping");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Decoracao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<string>("Material");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Decoracao");
+
+                    b.HasDiscriminator().HasValue("Decoracao");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.EquipamentoEletrico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<string>("Potencia");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<int>("Tensao");
+
+                    b.Property<int>("TipoCorrente");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EquipamentosEletricos");
+
+                    b.HasDiscriminator().HasValue("EquipamentoEletrico");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.EquipamentoPesca", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CapacidadeCarretel");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fabricante");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<string>("FreioTipo");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<int>("Manivela");
+
+                    b.Property<string>("Material");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Rolamentos");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EquipamentosPesca");
+
+                    b.HasDiscriminator().HasValue("EquipamentoPesca");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Estoque", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Chegada");
+
+                    b.Property<int>("LocalId");
+
+                    b.Property<int>("ProductId");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("Validade");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LocalId");
+
+                    b.ToTable("Estoques");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Local", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Bairro");
+
+                    b.Property<string>("Cidade");
+
+                    b.Property<int>("Numero");
+
+                    b.Property<string>("Pais");
+
+                    b.Property<string>("Rua");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locais");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Manutencao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<DateTime>("Validade");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Manutencao");
+
+                    b.HasDiscriminator().HasValue("Manutencao");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.ProdutoHigiene", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Ambiente");
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fabricante");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<string>("Material");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<bool>("Toxico");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("ProdutosHigiene");
+
+                    b.HasDiscriminator().HasValue("ProdutoHigiene");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Racao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Aroma");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<string>("Tipo");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Racoes");
+
+                    b.HasDiscriminator().HasValue("Racao");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Remedio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<bool>("PrecisaReceita");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int>("Quantidade");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<int>("Tipo");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Remedios");
+
+                    b.HasDiscriminator().HasValue("Remedio");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Roupa", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<bool>("AprovaDagua");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<int>("FatorProtecaoUV");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<string>("Material");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<string>("Tamanho")
+                        .IsRequired()
+                        .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 1)));
+
+                    b.Property<string>("Tipo");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Roupas");
+
+                    b.HasDiscriminator().HasValue("Roupa");
                 });
 
             modelBuilder.Entity("DomainProject.Entities.Models.Vara", b =>
@@ -57,6 +432,8 @@ namespace DotnetSotre.Infra.Data.Migrations
 
                     b.Property<DateTime>("Insercao");
 
+                    b.Property<bool>("IsInteirica");
+
                     b.Property<int>("Libragem");
 
                     b.Property<int>("Passadores");
@@ -71,11 +448,111 @@ namespace DotnetSotre.Infra.Data.Migrations
 
                     b.Property<int>("Tipo");
 
-                    b.Property<bool>("isInteirica");
-
                     b.HasKey("Id");
 
                     b.ToTable("Varas");
+
+                    b.HasDiscriminator().HasValue("Vara");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Viveiro", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("AnimalId");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<string>("Fotos");
+
+                    b.Property<DateTime>("Insercao");
+
+                    b.Property<int>("Litragem");
+
+                    b.Property<string>("Material");
+
+                    b.Property<string>("Medidas");
+
+                    b.Property<float>("Peso");
+
+                    b.Property<double>("Preco");
+
+                    b.Property<DateTime>("StampDateTime");
+
+                    b.Property<int>("Suportes");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.ToTable("Viveiros");
+
+                    b.HasDiscriminator().HasValue("Viveiro");
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Decoracao", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Estoque", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Local", "Local")
+                        .WithMany()
+                        .HasForeignKey("LocalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Manutencao", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.ProdutoHigiene", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Racao", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Remedio", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Roupa", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DomainProject.Entities.Models.Viveiro", b =>
+                {
+                    b.HasOne("DomainProject.Entities.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

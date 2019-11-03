@@ -11,7 +11,8 @@ namespace DomainProject.Entities.Models
         public int FatorProtecaoUV { get; set; }
         public float Peso { get; set; }
         public bool AprovaDagua { get; set; }
-        public string Especies { get; set; }
+        public int AnimalId { get; set; }
+        public virtual Animal Animal { get; set; }
         public string Tipo { get; set; }
 
 

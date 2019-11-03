@@ -9,29 +9,29 @@ namespace DomainProject.Enums
 
     }
 
-    public enum tensao
-    {
-        T127V,T220v
-    }
-
-    public enum Lado
-    {
-        Direita,Esquerda,Ambos
-    }
     public enum Corrente
     {
         AC = 0, DC = 1
     }
+    public enum Lado
+    {
+        Direita, Esquerda, Ambos
+    }
+    public enum tensao
+    {
+        T127V, T220v
+    }
+
     public enum TipoVara
     {
-        Telescopica,Molinete,Carretilha,Fly
+        Telescopica, Molinete, Carretilha, Fly
     }
     public enum TipoAcao
     {
-        Rapida,Media,Lenta
+        Rapida, Media, Lenta
     }
     public enum TipoRemedio
     {
-        Comprimido,Liquido
+        Comprimido, Liquido
     }
 }

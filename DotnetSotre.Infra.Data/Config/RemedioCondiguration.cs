@@ -12,6 +12,7 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<Remedio> builder)
         {
             builder.HasKey(r => r.Id);
+            builder.HasOne(r => r.Animal);
         }
     }
 }

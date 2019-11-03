@@ -13,7 +13,7 @@ namespace DotnetSotre.Infra.Data.Config
         {
             builder.HasKey(a => a.Id);
             builder.Property(a => a.Nome).IsRequired().HasMaxLength(50);
-            builder.Property(a => a.Especie).IsRequired().HasDefaultValue(100);
+            builder.Property(a => a.Especie).IsRequired().HasMaxLength(100);
         }
     }
 }

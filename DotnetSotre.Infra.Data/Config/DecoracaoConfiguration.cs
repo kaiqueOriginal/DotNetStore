@@ -12,6 +12,8 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<Decoracao> builder)
         {
             builder.HasKey(d => d.Id);
+            builder.HasOne(d => d.Animal);
+            builder.HasOne(d => d.Animal);
         }
     }
 }

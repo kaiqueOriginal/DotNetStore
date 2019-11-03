@@ -26,6 +26,7 @@ namespace DotnetSotre.Infra.Data.Context
         public DbSet<Roupa> Roupas { get; set; }
         public DbSet<Vara> Varas { get; set; }
         public DbSet<Viveiro> Viveiros { get; set; }
+        public DbSet<Produto> Produtos { get; set; }
         #endregion
 
         public StoreContext(DbContextOptions options) : base(options)
@@ -36,6 +37,7 @@ namespace DotnetSotre.Infra.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<Produto>();
             modelBuilder.ApplyConfiguration(new AnimalConfiguration());
             modelBuilder.ApplyConfiguration(new CampingConfiguration());
             modelBuilder.ApplyConfiguration(new DecoracaoConfiguration());

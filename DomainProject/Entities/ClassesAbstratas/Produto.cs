@@ -16,5 +16,6 @@ namespace DomainProject.Entities
         public DateTime Insercao { get; set; }
 
 
+
     }
 }

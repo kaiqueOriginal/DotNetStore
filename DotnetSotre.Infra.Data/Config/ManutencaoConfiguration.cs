@@ -12,6 +12,7 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<Manutencao> builder)
         {
             builder.HasKey(m => m.Id);
+            builder.HasOne(m => m.Animal);
         }
     }
 }

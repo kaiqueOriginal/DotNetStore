@@ -12,6 +12,7 @@ namespace DotnetSotre.Infra.Data.Config
         public void Configure(EntityTypeBuilder<Racao> builder)
         {
             builder.HasKey(r => r.Id);
+            builder.HasOne(r => r.Animal);
         }
     }
 }
