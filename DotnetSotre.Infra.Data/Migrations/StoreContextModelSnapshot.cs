@@ -22,9 +22,14 @@ namespace DotnetSotre.Infra.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Especie");
+                    b.Property<string>("Especie")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValue("100");
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
@@ -38,11 +43,17 @@ namespace DotnetSotre.Infra.Data.Migrations
 
                     b.Property<int>("Acao");
 
-                    b.Property<string>("Descricao");
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasMaxLength(400);
 
-                    b.Property<string>("Fabricante");
+                    b.Property<string>("Fabricante")
+                        .IsRequired()
+                        .HasMaxLength(80);
 
-                    b.Property<string>("Fotos");
+                    b.Property<string>("Fotos")
+                        .IsRequired()
+                        .HasMaxLength(150);
 
                     b.Property<DateTime>("Insercao");
 

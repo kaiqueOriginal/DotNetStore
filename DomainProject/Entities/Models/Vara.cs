@@ -13,7 +13,7 @@ namespace DomainProject.Entities.Models
         public float Peso { get; set; }
         public int Libragem { get; set; }
         public int Passadores { get; set; }
-        public bool isInteirica { get; set; }
+        public bool IsInteirica { get; set; }
         public TipoAcao Acao { get; set; }
 
     }
