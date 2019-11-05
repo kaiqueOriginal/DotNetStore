@@ -9,5 +9,12 @@ namespace DomainProject.Entities.Models
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Especie { get; set; }
+
+        public Animal(string nome, string especie):base()
+        {
+           
+            Nome = nome;
+            Especie = especie;
+        }
     }
 }

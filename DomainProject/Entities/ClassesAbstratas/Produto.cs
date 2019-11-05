@@ -12,8 +12,17 @@ namespace DomainProject.Entities
         public double Preco { get; set; }
         public string Fotos { get; set; }
         public string Descricao { get; set; }
-        public DateTime StampDateTime { get; set; }
-        public DateTime Insercao { get; set; }
+        public DateTime UltimaModificacao { get; set; }
+        public DateTime DataInsercao { get; set; }
+
+        public Produto(double preco,string fotosPath,string descricao,DateTime ultimaModificacao)
+        {
+            Preco = preco;
+            Fotos = fotosPath;
+            Descricao = descricao;
+            UltimaModificacao = ultimaModificacao;
+            DataInsercao = ultimaModificacao;
+        }
 
 
 
